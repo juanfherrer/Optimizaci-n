@@ -1,0 +1,204 @@
+¿Qué son las múltiples integrales?
+Las integrales dobles y triples permiten calcular cantidades acumuladas (como área, volumen, masa, probabilidad o ingresos) sobre regiones 2D o 3D. Cambiar de sistema de coordenadas facilita el cálculo dependiendo de la simetría del problema.
+
+⚙️ 1. Coordenadas Rectangulares (Cartesianas)
+Son las más comunes: ejes 
+𝑥
+,
+𝑦
+x,y (para 2D) o 
+𝑥
+,
+𝑦
+,
+𝑧
+x,y,z (para 3D).
+
+∬
+𝑅
+𝑓
+(
+𝑥
+,
+𝑦
+)
+ 
+𝑑
+𝑥
+ 
+𝑑
+𝑦
+o
+∭
+𝑉
+𝑓
+(
+𝑥
+,
+𝑦
+,
+𝑧
+)
+ 
+𝑑
+𝑥
+ 
+𝑑
+𝑦
+ 
+𝑑
+𝑧
+∬ 
+R
+​
+ f(x,y)dxdyo∭ 
+V
+​
+ f(x,y,z)dxdydz
+🎯 Ejemplo:
+Calcular el ingreso total generado en una zona urbana rectangular donde 
+𝑓
+(
+𝑥
+,
+𝑦
+)
+f(x,y) representa la densidad de ingresos en cada punto.
+
+🧭 2. Coordenadas Polares (2D)
+Se usan cuando el dominio tiene simetría circular. Las variables son:
+
+𝑟
+r = distancia al origen
+
+𝜃
+θ = ángulo
+
+∬
+𝑅
+𝑓
+(
+𝑟
+,
+𝜃
+)
+ 
+𝑟
+ 
+𝑑
+𝑟
+ 
+𝑑
+𝜃
+∬ 
+R
+​
+ f(r,θ)rdrdθ
+🎯 Ejemplo:
+Analizar datos de acceso a servicios públicos en regiones circulares (por ejemplo, zonas alrededor de una plaza central en pueblos).
+
+🌀 3. Coordenadas Cilíndricas (3D)
+Extienden las coordenadas polares al 3D:
+
+𝑟
+,
+𝜃
+r,θ (como en polares)
+
+𝑧
+z (altura)
+
+∭
+𝑉
+𝑓
+(
+𝑟
+,
+𝜃
+,
+𝑧
+)
+ 
+𝑟
+ 
+𝑑
+𝑟
+ 
+𝑑
+𝜃
+ 
+𝑑
+𝑧
+∭ 
+V
+​
+ f(r,θ,z)rdrdθdz
+🎯 Ejemplo:
+Modelar la distribución de población o recursos en un edificio cilíndrico (como un centro comercial) o en silos agroindustriales.
+
+🌐 4. Coordenadas Esféricas (3D)
+Útiles para dominios con simetría esférica.
+
+𝜌
+ρ = distancia al origen
+
+𝜃
+θ = ángulo en xy
+
+𝜙
+ϕ = ángulo desde el eje z
+
+∭
+𝑉
+𝑓
+(
+𝜌
+,
+𝜃
+,
+𝜙
+)
+ 
+𝜌
+2
+sin
+⁡
+(
+𝜙
+)
+ 
+𝑑
+𝜌
+ 
+𝑑
+𝜙
+ 
+𝑑
+𝜃
+∭ 
+V
+​
+ f(ρ,θ,ϕ)ρ 
+2
+ sin(ϕ)dρdϕdθ
+🎯 Ejemplo:
+Evaluar campos de radiación o temperatura que rodean una planta de energía o en estudios climáticos globales.
+
+🧪 Aplicaciones en Ciencia de Datos y Machine Learning
+🔎 1. Modelos Probabilísticos
+Las integrales múltiples son fundamentales para densidades conjuntas de probabilidad en modelos estadísticos multivariados.
+
+Ej: calcular la probabilidad total en una región del espacio de variables.
+
+📈 2. Machine Learning
+En modelos bayesianos, se necesita integrar sobre espacios de parámetros (posterior).
+
+Ej: calcular la verosimilitud marginal o esperanza matemática de un parámetro.
+
+🧠 3. Redes Neuronales / Computer Vision
+En visión por computadora, las integrales sobre superficies ayudan a procesar formas tridimensionales.
+
+En deep learning físico, se usan integrales en esferas o cilindros para simular entornos reales.
+
+🧹 4. Preprocesamiento de Datos
+En modelos geoespaciales, convertir datos de sistemas de coordenadas rectangulares a polares o esféricos mejora análisis de proximidad, rutas o clústeres.
